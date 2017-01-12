@@ -3,6 +3,7 @@ class Admin::JobsController < ApplicationController
 
     def index
         @job = Job.all
+    end
 
     def new
         @job = Job.new
