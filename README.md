@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+V2
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Added bootstrap-touch-slider
+Modified front page to fit the edge
+Changed navbar font-color and hover color
+Added a border to seperate "login" and "register" button
+Added a hyperlink to the map icon at the bottom
+Added title to icons at the bottom as tooltip

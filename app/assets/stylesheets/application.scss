@@ -56,6 +56,13 @@
     border-color: #26C6DA;//边框色
     margin-bottom: 0;
 }
+.navbar li {
+    border-right: 1px solid #bbb;
+}
+
+.navbar li:last-child {
+    border-right: none;
+}
 
 @media (min-width: 768px) {
     .navbar {
@@ -71,17 +78,17 @@
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #7CB342;//鼠标放置在链接上的文字颜色
+  color: #FBC02D;//鼠标放置在链接上的文字颜色
   background-color: transparent;//鼠标放置在链接上的背景颜色，这里设为透明
 }
 
 .navbar-default .navbar-nav > li > a{
-  color: #FFEB3B;//用户email颜色
+  color: #00897B;//用户email颜色
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #FF6F00;
+  color: #FBC02D;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,

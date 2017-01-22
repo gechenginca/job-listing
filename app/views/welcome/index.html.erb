@@ -33,9 +33,9 @@ Add Text Animation: https://daneden.github.io/animate.css/
                <div class="row">
                    <!-- Slide Text Layer -->
                    <div class="slide-text slide_style_left">
-                       <h1 data-animation="animated zoomInRight">一份努力</h1>
-                       <h1 data-animation="animated zoomInRight">一份收获</h1>
-                       <p data-animation="animated fadeInLeft">18K招聘网</p>
+                       <h1 class="animated bounceInLeft" data-animation="animated zoomInRight">一份付出</h1>
+                       <h1 class="animated bounceInRight" data-animation="animated zoomInRight">一份收获</h1>
+                       <p class="animated flash" data-animation="animated fadeInLeft">18K招聘网</p>
                        <a href="/users/sign_up" target="_blank" class="btn btn-warning" data-animation="animated fadeInLeft">注册</a>
                        <a href="/users/sign_in" target="_blank" class="btn btn-success" data-animation="animated fadeInLeft">登入</a>
                    </div>
@@ -52,8 +52,8 @@ Add Text Animation: https://daneden.github.io/animate.css/
            <div class="bs-slider-overlay"></div>
            <!-- Slide Text Layer -->
            <div class="slide-text slide_style_center">
-               <h1 data-animation="animated flipInX">努力、天份、Winner</h1>
-               <p data-animation="animated lightSpeedIn">我们希望藉由这个网站，能让大家找到且应征上高薪且优质的工作。</p>
+               <h1 class="animated fadeInDown" data-animation="animated flipInX">努力、天份、Winner</h1>
+               <p class="animated zoomIn" data-animation="animated lightSpeedIn">我们希望藉由这个网站，能让大家找到且应征上高薪且优质的工作。</p>
                <a href="/users/sign_up" target="_blank" class="btn btn-warning" data-animation="animated fadeInLeft">注册</a>
                <a href="/users/sign_in" target="_blank" class="btn btn-success" data-animation="animated fadeInLeft">登入</a>
            </div>
@@ -82,7 +82,9 @@ Add Text Animation: https://daneden.github.io/animate.css/
     <div class="row">
       <div class="col-sm-4 ">
         <div class="thumbnail">
-          <img src="/images/map.png" alt="search" class = "img-thhumbnail">
+          <a href="http://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D北京朝阳建外SOHO">
+            <img src="/images/map.png" alt="map" class = "img-thhumbnail" title="地址">
+          </a>
           <div class="caption">
             <h4>北京朝阳建外SOHO</h3>
           </div>
@@ -90,7 +92,7 @@ Add Text Animation: https://daneden.github.io/animate.css/
       </div>
       <div class="col-sm-4 ">
         <div class="thumbnail">
-          <img src="/images/email.png" alt="bid" class = "img-thhumbnail">
+          <img src="/images/email.png" alt="email" class = "img-thhumbnail" title="邮箱">
           <div class="caption">
             <h4>info@18koffer.com</h3>
           </div>
@@ -98,7 +100,7 @@ Add Text Animation: https://daneden.github.io/animate.css/
       </div>
       <div class="col-sm-4 ">
         <div class="thumbnail">
-          <img src="/images/phone.png" alt="heart" class = "img-thhumbnail">
+          <img src="/images/phone.png" alt="phone#" class = "img-thhumbnail" title="电话">
           <div class="caption">
             <h4>010-12344321</h3>
           </div>
