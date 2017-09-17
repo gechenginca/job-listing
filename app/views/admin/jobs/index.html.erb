@@ -1,24 +1,20 @@
-<div class="pull-right">
-    <%= link_to("Add a job", new_admin_job_path, :class => "btn btn-default" ) %>
+<div class="col-md-12">
+    <div class="pull-right">
+        <%= link_to("Add a job", new_admin_job_path, class: "btn btn-default") %>
+    </div>
+    <table class="table table-boldered table-striped custab">
+        <thead>
+            <tr>
+                <td>职缺</td>
+                <td>收到简历数量</td>
+                <td>薪资下限</td>
+                <td>薪资上限</td>
+                <td>管理选项</td>
+                <td>刊登时间</td>
+            </tr>
+        </thead>
+        <tbody>
+            <%= render :partial => "job_item", :collection => @jobs, :as => :job %>
+        </tbody>
+    </table>
 </div>
-
-<br><br>
-
-<table class="table table-boldered">
-    <% @jobs.each do |job| %>
-    <tr>
-        <td>
-            <%= render_job_status(job) %>
-
-            <%= link_to(job.title, admin_job_path(job)) %>
-        </td>
-        <td>
-            <%= link_to("Edit", edit_admin_job_path(job)) %>
-            <%= link_to("Delete", admin_job_path(job), :method => :delete, :data => { :confirm => "Are you sure?" }) %>
-        </td>
-        <td>
-            <%= job.created_at %>
-        </td>
-    </tr>
-    <% end %>
-</table>
